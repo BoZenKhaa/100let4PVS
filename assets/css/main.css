@@ -2011,7 +2011,7 @@
 		font-size: 4em;
 		line-height: 1.5em;
 	}
-	
+
 /* Form */
 
 	form {
@@ -2250,17 +2250,17 @@
 
 		.icon.style1:before {
 			color: #c3e895;
-			content: "110";
+			content: "115";
 		}
 
 		.icon.style2:before {
 			color: #8addaa;
-			content: "95";
+			content: "100";
 		}
 
 		.icon.style3:before {
 			color: #6bd4c8;
-			content: "15";
+			content: "20";
 		}
 
 		.icon.style4:before {
@@ -2269,12 +2269,12 @@
 
 		.icon.style5:before {
 			color: #4a87d3;
-			content: "10";
+			content: "15";
 		}
 
 		.icon.style6:before {
 			color: #6b88e6;
-			content: "55";
+			content: "60";
 		}
 
 		.icon.major {
@@ -2338,25 +2338,25 @@
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
-		
-		
+
+
 			.image.fit img {
 				width: 100%;
 			}
-			
+
 		.image.ctyrka {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
-		
+
 			.image.ctyrka img {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
 				width: 30%;
 			}
-			
+
 /* Mapa */
 	.mapa {
 		border-radius: 4px;
@@ -2364,12 +2364,12 @@
 		display: inline-block;
 		position: relative;
 	}
-	
+
 		.mapa.fit {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
-		}	
+		}
 
 /* List */
 
