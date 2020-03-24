@@ -9,7 +9,6 @@
 -->
 <html>
 	<head>
-		<meta charset="utf-8" />
 		<!--MAPY CZ Skripty-->
 		<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
     <script type="text/javascript">Loader.load()</script>
@@ -18,6 +17,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
 		<title>Oslava 100 let 4. PVS</title>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -60,13 +60,26 @@
 						<!-- <div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
 						</div> -->
-						<div id="mapa" style="width:600px; height:400px;"></div>
-						<script type="text/javascript">
-							var stred = SMap.Coords.fromWGS84(14.41, 50.08);
-							var mapa = new SMap(JAK.gel("mapa"), stred, 10);
-							mapa.addDefaultLayer(SMap.DEF_BASE).enable();
-							mapa.addDefaultControls();
-						</script>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span id="mapa" class="mapa fit" style="width:600px; height:400px;"></span>
+							<script>
+							var center = SMap.Coords.fromWGS84(14.4632006, 50.0842258); // nastavení středu zobrazené mapy
+							var zoom = 16; // nastavení přiblížení mapy
+
+							var mapa = new SMap(JAK.gel("mapa"), center, zoom);
+
+							mapa.addDefaultLayer(SMap.DEF_SMART_BASE).enable(); // nastavení a zobrazení mapového podkladu
+							mapa.addDefaultControls(); // přidání základních ovládacích prvků
+
+							var vrstvaZnacek = new SMap.Layer.Marker(); // přidání vrstvy se značkami
+							mapa.addLayer(vrstvaZnacek);
+							vrstvaZnacek.enable();
+
+							var umisteniZnacky = SMap.Coords.fromWGS84(14.4632006, 50.0842258);
+							var znacka = new SMap.Marker(umisteniZnacky, "znacka", {}); // přidání konkrétní značky
+							vrstvaZnacek.addMarker(znacka);
+							</script>
+						</div>
 						<header class="major align-center">
 							<h2>Šiřte informaci dál!</h2>
 							<p>Dejte prosím vědět všem bývalým členům přístavu co znáte, nemáme na všechny kontakt. Níže můžete zadat vaše nebo cizí kontaktní
