@@ -4,6 +4,7 @@ K zobrazení na https://bozenkhaa.github.io/100let4PVS.
 
 Používá template Photon od HTML5 UP, https://html5up.net/photon.
 Používá mapy.cz API k zobrazení mapy, https://api.mapy.cz.
+Používá skautské fonty https://drive.google.com/drive/folders/1HQl-3z1dzO9VinC1FjVChzvW7xW7kyq9.
 
 # Template Readme
 
