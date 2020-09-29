@@ -1,0 +1,194 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Adapted by Jan Mrkos, 18. 7. 2015
+	Updated in 2020.
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--MAPY CZ Skripty-->
+		<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+    <script type="text/javascript">Loader.load()</script>
+
+		<!-- favicon-->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+		<title>Oslava 100 let Čtyřky</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="image ctyrka"><img src="images/ctyrka.png" alt="ctyrka" /></span>
+					<h1>Oslava 100 let Čtyřky<br />
+					<a href="http://4pvs.nipax.cz/">pořádá 4. přístav vodních skautů</a></h1>
+					<p>a další výročí<br />
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Kdy a kde?</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>1. - 5. 10. 2020</h2>
+							</header>
+							<p>Akce je stále v plánu! Ale abychom odhadli, zda a které programy uskutečnit, potřebujeme vědět, kolik lidí dorazí.
+							</p>
+							<header class="major align-center">
+								<h2>Nahlaš svou účast či neůčast, ať víme, zda a jak připravit programy:</h2>
+								<p></p>
+								<ul class="actions uniform">
+									<li><a target=blank href="https://docs.google.com/forms/d/e/1FAIpQLScnEZX4zOY1Xfl_6MESTXxEayy6V4E1lEg23z8oe1VpJ_IcXw/viewform" class="button special">Nezávazné nahlášení účastí</a></li>
+								</ul>
+							</header>
+							<p>
+								Sejdeme se v klubovně na Křížku, to znamená v Pitterově 2892/1 na Praze 3. Od stanice tram č. 9, 26 Olšanská je to kousíček pěšky, hned za budovou SUDOPu.
+							</p>
+						</div>
+						<!-- <div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+						</div> -->
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span id="mapa" class="mapa fit" style="width:600px; height:400px;"></span>
+							<script>
+							var center = SMap.Coords.fromWGS84(14.4632006, 50.0842258); // nastavení středu zobrazené mapy
+							var zoom = 16; // nastavení přiblížení mapy
+
+							var mapa = new SMap(JAK.gel("mapa"), center, zoom);
+
+							mapa.addDefaultLayer(SMap.DEF_SMART_BASE).enable(); // nastavení a zobrazení mapového podkladu
+							mapa.addDefaultControls(); // přidání základních ovládacích prvků
+
+							var vrstvaZnacek = new SMap.Layer.Marker(); // přidání vrstvy se značkami
+							mapa.addLayer(vrstvaZnacek);
+							vrstvaZnacek.enable();
+
+							var umisteniZnacky = SMap.Coords.fromWGS84(14.4632006, 50.0842258);
+							var znacka = new SMap.Marker(umisteniZnacky, "znacka", {}); // přidání konkrétní značky
+							vrstvaZnacek.addMarker(znacka);
+							</script>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<ul class="major-icons">
+								<li><span class="icon style1 major"></span></li>
+								<li><span class="icon style2 major"></span></li>
+								<li><span class="icon style3 major"></span></li>
+								<li><span class="icon style4 major fa-glass"></span></li>
+								<li><span class="icon style5 major"></span></li>
+								<li><span class="icon style6 major"></span></li>
+							</ul>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+								<h2>Co všechno vlastně slavíme?</h2>
+							</header>
+							<p>Několi věcí najednou! Tak především je to již 100 let od založení 4. oddílu vodních skautů!</p>
+							<p>Kromě toho se před 115 lety narodil dlouholetý kapitán přístavu Ladislav Ritt - Nestor. </p>
+							<p>To ovšem nejsou jediné narozeniny. Slavíme také 60 let několika nestárnoucích členů. To znamená nezmarů jako jsou Guma, Rajče a Hanka.</p>
+							<p>Další výročí se týká naší nové klubovny na Křížku. Je to již 20 let od zahájení stavby. A dokonce 15 let od kolaudace. A stále ještě není vše hotovo. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<header class="major align-center">
+							<h2>Program dne, večera a dalšího dne</h2>
+						</header>
+						<div class="6u 12u$(medium)">
+							<p>
+								Oslavy budou trvat symbolických 100 hodin - 4 dny, od čtvrtka 1. 10. do pondělí 5. 10. 2020. Některé programy jsou určeny jen pro určité skupiny, 
+								<a target=blank href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_Lvd99EjngUhoQ-IV5CY7UQK4pdVgKzj058oFmP3lBrYxZbKrC2eCpCM6WNL0dejQCn2C8_GsgbPe/pubhtml?gid=1184985185&single=true"> viz popisky programů </a>.
+							</p>
+							<p>
+							Moc nám pomůže, když se na programy (nezávazně) přihlásíte:
+							<!-- </p> -->
+							<ul class="actions uniform align-center">
+								<li><a target=blank href="https://docs.google.com/forms/d/e/1FAIpQLScnEZX4zOY1Xfl_6MESTXxEayy6V4E1lEg23z8oe1VpJ_IcXw/viewform" class="button special">Přihlašování</a></li>
+							</ul>
+							Výjímkou je (kapacitně omezené) nedělní splouvání Sázavy <a target=blank href="files/Sazava_2020_info.pdf">(detaily zde)</a>, 
+							určené především bývalým členům a rodičům s dětmi. Zájemci se hlásí přímo organizátorovi, Rajčeti, na email 
+							<a href="mailto:petr.karlovsky@nipax.cz">petr.karlovsky@nipax.cz</a>
+							</p>
+						 <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_Lvd99EjngUhoQ-IV5CY7UQK4pdVgKzj058oFmP3lBrYxZbKrC2eCpCM6WNL0dejQCn2C8_GsgbPe/pubhtml?gid=1184985185&amp;single=true&amp;widget=true&amp;headers=false"
+						 frameborder="0" marginwidth="0" marginheight="0" width="650" height="500"></iframe> -->
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><a target=blank href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_Lvd99EjngUhoQ-IV5CY7UQK4pdVgKzj058oFmP3lBrYxZbKrC2eCpCM6WNL0dejQCn2C8_GsgbPe/pubhtml?gid=1184985185&single=true"><img src="images/program_100_let.jpg" alt="" /></a></span>
+						</div>
+						<!-- <div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/krizek.jpg" alt="" /></span>
+						</div> -->
+						<!-- <header class="major align-center">
+							<h2>Přijď i třeba jen na chvilku!</h2>
+							<p>Sobotní oslavu je možné protáhnout až do nedělního rána. V klubovně lze uložit ke spánku děti i dospělé, takže nemusíte spěchat pryč.</p>
+						</header> -->
+					</div>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Dej nám na sebe kontakt!</h2>
+					</header>
+					<p> Pokud chceš, aby ti přišla pozvánka i na další výročí.</p>
+					<ul class="actions uniform">
+						<li><a href="https://forms.gle/m7ksFQe8QYwVyaS47" class="button special">Formulář na kontaktní informace</a></li>
+						<li><a href="mailto:hondzik@skaut.cz" class="button">Napiš nám email</a></li>
+					</ul>
+					<p>Jan Mrkos – Hondzik, 720 411 622, <a href="mailto:hondzik@skaut.cz">hondzik@skaut.cz</a><br>
+					Jaroslav Veit – Guma,	724 600 621, <a href="mailto:j.veit@volny.cz">j.veit@volny.cz</a></p>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/4pvsjn/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="mailto:hondzik@skaut.cz" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/BoZenKhaa/100let4PVS" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; JM</li><li>Návrh: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
